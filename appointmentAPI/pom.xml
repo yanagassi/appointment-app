@@ -15,6 +15,7 @@
 	<description>Appiintment API</description>
 	<properties>
 		<java.version>21</java.version>
+		<spring-security.version>6.2.2</spring-security.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -38,7 +39,30 @@
 			<artifactId>postgresql</artifactId> 
 		</dependency>
 
-	</dependencies>
+
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+</dependencies>
 
 	<build>
 		<plugins>

@@ -1,6 +1,7 @@
 package com.appointment.org.appointment.DTOs;
 
 public class LoginRequestDto {
+
     private String email;
     private String password;
 

@@ -8,6 +8,14 @@ import jakarta.persistence.Id;
 @Entity
 public class Usuario {
 
+    public Usuario(){}
+
+    public Usuario(String name, String email, String password){
+        this.setNome(name);
+        this.setEmail(email);
+        this.setPassword(password);
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
